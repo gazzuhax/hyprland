@@ -1,6 +1,6 @@
 Screenshot
 
-![image](https://github.com/gazzuhax/dotfiles/assets/138269636/3d8afa2a-2469-4cb8-a76f-f91af37945b0)
+![image](https://github.com/gazzuhax/arco-hyprland/assets/138269636/88ff4b31-4c70-4a3d-b1c2-0e9974eb046c)
 
 ![image](https://github.com/gazzuhax/arco-hyprland/assets/138269636/0a604682-0c05-4641-aa1d-5895b97c766c)
 
