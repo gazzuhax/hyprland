@@ -1,4 +1,4 @@
-Screenshot
+Screenshots
 
 ![image](https://github.com/gazzuhax/arco-hyprland/assets/138269636/88ff4b31-4c70-4a3d-b1c2-0e9974eb046c)
 
