@@ -195,7 +195,7 @@
   "custom/powermenu": {
     "format": "",
     "tooltip": false,
-    "on-click": "exec wlogout -p layer-shell",
+    "on-click": "exec archlinux-logout",
   },
 "hyprland/window": {
   "format": "{}",
