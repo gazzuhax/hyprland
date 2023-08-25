@@ -4,13 +4,14 @@
     font-size: 14px;
     font-weight: 900;
     margin: 0 3;
-    padding: 0;
+    padding: 1 1;
   }
   
   window#waybar {
     background-color: #1f2d49; 
     border-radius: 70px;
-    /*margin: 2px 8px;*/ /*margin: 2px 8px;*/
+    margin: 2px 8px; /*margin: 2px 8px;*/
+    padding: 1 0;
     /*background-color: transparent;
     color: #ffffff;
     transition-property: background-color;
