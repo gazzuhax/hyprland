@@ -8,21 +8,22 @@
   }
   
   window#waybar {
-     background: #1f2d49; 
+    background-color: #1f2d49; 
+    border-radius: 70px;
+    /*margin: 2px 8px;*/ /*margin: 2px 8px;*/
     /*background-color: transparent;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: 0.5s;
-    border-top: 8px transparent;*/
-    border-radius: 70px;
-    /*transition-duration: 0.5s;*/
-    margin: 2px 8px;
+    border-top: 8px transparent;
+    transition-duration: 0.5s;*/
+
   }
   
 
-  /*window#waybar.hidden {
-    opacity: 0.5;
-  }*/
+  window#waybar.hidden {
+    opacity: 0.1;
+  }
   
   #workspaces button {
     padding-right: 4px;
@@ -49,6 +50,11 @@
     background-color: #eb4d4b;
   }
   
+  #custom-cava {
+
+  }
+
+  #cava,
   #backlight,
   #tray,
   #disk,
@@ -65,8 +71,9 @@
   #network {
     padding: 8px 10px;
     background-color: #283d62;
+    /*background: rgba(0, 0, 0, 0);*/
     border-radius: 70px;
-    margin: 10px 4px;
+    margin: 10px 7px;
   }
   
   #window {
