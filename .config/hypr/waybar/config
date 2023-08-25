@@ -2,7 +2,7 @@
     //"include": "/etc/xdg/waybar/modules",
     "layer": "top",
       "position": "top",
-      "margin-top": 10,
+      "margin-top": 15,
       "margin-left": 15,
       "margin-right": 15,
       "padding": 5,
