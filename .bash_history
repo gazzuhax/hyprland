@@ -1,0 +1,2 @@
+nmtui
+sudo passwd
