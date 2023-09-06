@@ -3,11 +3,11 @@
     "layer": "top",
       "position": "top",
       "margin-top": 15,
-      "margin-left": 15,
-      "margin-right": 15,
+      "margin-left": 35,
+      "margin-right": 35,
       "padding": 5,
       "modules-left": [
-        "wlr/workspaces",
+        "hyprland/workspaces",
         "cava",
         "tray",
         "custom/updater",
@@ -62,9 +62,9 @@
         "interval": 2,
         "align": 0,
         "rotate": 0,
-        "format": "{icon} {percent}%",
+        "format": "{icon}  {percent}%",
         //format-icons-Arch
-        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "format-icons": ["󰃞 ", "󰃟 ", "󰃠 "],
         //format-icons-Gen2
         //"format-icons": ["", "", "", ""],
         "icon-size": 10,
@@ -77,7 +77,7 @@
         "smooth-scrolling-threshold": 1,
       },
   
-      "wlr/workspaces": {
+      "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
         "format-icons": {
@@ -189,7 +189,7 @@
   },    
   
   "cpu": {
-    "format": " {usage}%",
+    "format": "  {usage}%",
     "tooltip": "false"
   },
   "custom/powermenu": {
