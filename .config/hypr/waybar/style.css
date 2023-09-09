@@ -3,7 +3,7 @@
     font-family: JetBrainsMono Nerd Font;
     font-size: 14px;
     font-weight: 900;
-    margin: 0 3;
+    margin: 0px 3px;
     padding: 1px 1px;
     border: 0;
     border-radius: 0;
@@ -30,7 +30,7 @@
   }
   
   #workspaces button {
-    padding-right: 4px;
+    padding: 4px 4px;
     color: #caecf9;
     background-color: transparent;
     /* Use box-shadow instead of border so the text isn't offset */
@@ -77,15 +77,15 @@
     padding: 10px 8px;
     background-color: #283d62;
     /*background: rgba(0, 0, 0, 0);*/
-    border-radius: 70px;
+    border-radius:70px;
     margin: 10px 5px;
     /*border-top: 3px;
     border-top-color: #00ff00;
     border-right: 3px;
     border-right-color: #00ff00;*/
-    border-bottom: 3px;
+    border-bottom: 4px;
     border-bottom-color: #00ffff;
-    border-left: 4px;
+    border-left: 5px;
     border-left-color: #00ffff;
     border-style: solid;
   }
@@ -104,6 +104,7 @@
   
   #custom-updater {
     color: #00ffff;
+    border-radius: 50px;
   }
   
   #custom-powermenu {
@@ -145,12 +146,11 @@
   }
   
   #memory {
-    color: #ffffff;
+    color: #00ffff;
   }
   
   #network {
-    color: #ffffff;
-    min-width: 200px;
+    color: #00ffff;
   }
   
   #clock {
