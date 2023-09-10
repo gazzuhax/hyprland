@@ -9,8 +9,8 @@
       "modules-left": [
         "clock",
         "cava",
-        "tray",
         "disk",
+        "tray",
         ],
       "modules-center": [
         "hyprland/workspaces",
@@ -86,13 +86,12 @@
           "3": "",
           "4": "",
           "5": "",
-          "6": "",
           "active": "",
-          "focused": "",
-          "default": "",
+          "focused": "3",
+          "default": "3",
         },
         "persistent_workspaces": {
-          "*": 6
+          "*": 5
         }
     },
       "temperature": {
@@ -104,7 +103,7 @@
         "format-critical": "{icon} {temperatureC}°C",
         "format": "{icon} {temperatureC}°C",
         "format-icons": [""],
-        "on-click-right": "foot --title btop sh -c 'btop'"
+        "on-click-right": "kitty btop'"
       },
 
       "clock": {
@@ -127,7 +126,6 @@
                     }
                     }
         },    
-          
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-bluetooth": " {icon} {volume}%",
