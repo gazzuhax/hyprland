@@ -7,21 +7,26 @@
       "margin-right": 15,  //125
       "padding": 5,
       "modules-left": [
+        "custom/arch",
         "clock",
         "cava",
         "disk",
+        "custom/updater",
         "tray",
         ],
       "modules-center": [
         "hyprland/workspaces",
         ],
       "modules-right": [
-        "custom/updater",
         "temperature",
         "cpu",
         "backlight",
         "pulseaudio",
+        "network",
         "battery",
+        "custom/powermenu",
+
+
       ],
   
       "disk": {
@@ -142,6 +147,19 @@
     "scroll-step": 1,
     "on-click": "pavucontrol"
   },
+
+    "custom/arch": {
+      "format":" 󰣇 ",
+    "tooltip": false,
+    "on-click": "exec ~/.config/hypr/rofi/bin/launcher"
+  },
+
+  "custom/bluetooth": {
+    "format":"  ",
+  "tooltip": false,
+  "on-click": "exec blueman-manager"
+  },
+
   "custom/updater":{
     "format": " {}",
     "exec": "checkupdates | wc -l",
@@ -172,10 +190,12 @@
     "tooltip": true
   },
   "network": {
-    "interface": "enp34s0",
-    "tooltip-format-ethernet": "{ifname} ",
-    "interval": 2,
-    "format": " {bandwidthDownBits}  {bandwidthUpBits}",
+    "format-wifi": " Connected",
+    "format-ethernet": " {essid}",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": " Disconnected",
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+    "on-click": "exec ~/.config/rofi/network_menu"
   },
   "memory": {
     "exec": "sh -c \"df -h / | awk 'NR==2 {print \\$4}'\"",
