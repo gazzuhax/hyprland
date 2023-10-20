@@ -71,6 +71,8 @@ window#waybar.hidden {
 #window,
 #pulseaudio,
 #custom-updater,
+#custom-arch,
+#custom-bluetooth,
 #network {
   padding: 10px 8px;
   background-color: #0A1034;
@@ -92,6 +94,18 @@ window#waybar.hidden {
   color: #929db1;
 }
 
+#custom-bluetooth {
+  color: #00ffff;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#custom-arch {
+  color: #00ffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 #backlight {
   color: #00ffff;
 }
@@ -106,7 +120,7 @@ window#waybar.hidden {
 
 #custom-powermenu {
   color: #ff0015;
-  padding-right: 18px;
+  padding-right: 14px;
   padding-left: 15px;
 }
 
@@ -147,6 +161,8 @@ window#waybar.hidden {
 
 #network {
   color: #00ffff;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 
 #clock {
