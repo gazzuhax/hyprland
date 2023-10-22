@@ -14,19 +14,20 @@ done
 ${SCRIPTSDIR}/Mako.sh &
 
 # Lauch statusbar (waybar)
-#${SCRIPTSDIR}/Waybar.sh &
+${SCRIPTSDIR}/rwaybar.sh &
 
 # Terminate any running instance of Waybar
-killall -q waybar
+#killall -q waybar
+
 
 # Wait for the process to be completely shut down
-while pgrep -x waybar >/dev/null; do sleep 1; done
+#while pgrep -x waybar >/dev/null; do sleep 1; done
 
 # Set the environment variable for GTK to use the style.css
-export GDK_PIXBUF_MODULE_FILE=/path/to/style.css
+#export GDK_PIXBUF_MODULE_FILE=/path/to/style.css
 # Launch Waybar with your desired configuration file (config.json)
 # You should replace "config.json" with the path to your actual configuration file.
-/usr/bin/waybar -c /etc/xdg/waybar/config &
+#/usr/bin/waybar -c /etc/xdg/waybar/config &
 
 # Optionally, you can also launch any other applications you want to run at startup here.
 # For example, to start a terminal emulator:
