@@ -78,7 +78,7 @@ window#waybar.hidden {
   background-color: #0A1034;
   /*background: rgba(0, 0, 0, 0);*/
   border-radius:15px;
-  margin: 0px 5px;
+  margin: 0px 3px;
   /*border-top: 3px;
   border-top-color: #00ff00;
   border-right: 3px;
@@ -125,7 +125,7 @@ window#waybar.hidden {
 
 #custom-powermenu {
   color: #ff0015;
-  padding-right: 14px;
+  padding-right: 13px;
   padding-left: 15px;
 }
 
@@ -167,7 +167,7 @@ window#waybar.hidden {
 #network {
   color: #00ffff;
   padding-left: 15px;
-  padding-right: 10px;
+  padding-right: 9px;
 }
 
 #clock {
