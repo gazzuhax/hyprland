@@ -21,7 +21,7 @@ ${SCRIPTSDIR}/gtkthemes &
 ${SCRIPTSDIR}/notifications &
 
 # Lauch statusbar (waybar)
-${SCRIPTSDIR}/statusbar &
+#${SCRIPTSDIR}/rwaybar.sh &
 
 # Xauthority
 ${SCRIPTSDIR}/xauthority &
@@ -31,3 +31,4 @@ ${SCRIPTSDIR}/xauthority &
 #telegram-desktop &
 #discord &
 #nm-applet --indicator
+
