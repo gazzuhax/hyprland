@@ -37,14 +37,14 @@ window {
     enabled:                     true;
     border-radius:               0px;
     cursor:                      "default";
-    background-color:            @background;
+    background-color:            transparent;
 }
 
 /*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
     spacing:                     0px;
-    background-color:            transparent;
+    background-color:            @background;
     orientation:                 vertical;
     children:                    [ "inputbar", "listbox" ];
 }
@@ -52,7 +52,7 @@ mainbox {
 listbox {
     spacing:                     20px;
     padding:                     20px;
-    background-color:            transparent;
+    background-color:            @background;
     orientation:                 vertical;
     children:                    [ "message", "listview" ];
 }
