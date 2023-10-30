@@ -16,20 +16,18 @@ PS1='[\u@\h \W]\$ '
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-
-if [ -d "$HOME/.bin" ] ;
-  then PATH="$HOME/.bin:$PATH"
+if [ -d "$HOME/.bin" ]; then
+	PATH="$HOME/.bin:$PATH"
 fi
 
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
+if [ -d "$HOME/.local/bin" ]; then
+	PATH="$HOME/.local/bin:$PATH"
 fi
 
 #ignore upper and lowercase when TAB completion
 bind "set completion-ignore-case on"
 
 ### ALIASES ###
-
 #list
 alias ls='ls --color=auto'
 alias la='ls -a'
@@ -38,6 +36,17 @@ alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 alias listdir="ls -d */ > list"
 
+# Enable fzf auto-suggestions for command history
+#source /usr/share/doc/fzf/examples/key-bindings.bash
+
+alias cl="clear"
+alias r="ranger"
+alias x="exit"
+alias nf="neofetch"
+alias i="sudo pacman -S"
+alias un="sudo pacman -Rns"
+alias pr="paru -S"
+alias ur="paru -Rns"
 #pacman
 alias sps='sudo pacman -S'
 alias spr='sudo pacman -R'
@@ -47,10 +56,10 @@ alias spqo='sudo pacman -Qo'
 alias spsii='sudo pacman -Sii'
 
 # show the list of packages that need this package - depends mpv as example
-function_depends()  {
-    search=$(echo "$1")
-    sudo pacman -Sii $search | grep "Required" | sed -e "s/Required By     : //g" | sed -e "s/  /\n/g"
-    }
+function_depends() {
+	search=$(echo "$1")
+	sudo pacman -Sii $search | grep "Required" | sed -e "s/Required By     : //g" | sed -e "s/  /\n/g"
+}
 
 alias depends='function_depends'
 
@@ -194,11 +203,11 @@ alias vmware-start="sudo systemctl enable --now vmtoolsd.service"
 alias sv="sudo systemctl enable --now vmtoolsd.service"
 
 #shopt
-shopt -s autocd # change to named directory
+shopt -s autocd  # change to named directory
 shopt -s cdspell # autocorrects cd misspellings
 shopt -s cmdhist # save multi-line commands in history as single line
 shopt -s dotglob
-shopt -s histappend # do not overwrite history
+shopt -s histappend     # do not overwrite history
 shopt -s expand_aliases # expand aliases
 
 #youtube download
@@ -260,7 +269,7 @@ alias nhostname="sudo $EDITOR /etc/hostname"
 alias nresolv="sudo $EDITOR /etc/resolv.conf"
 alias nb="$EDITOR ~/.bashrc"
 alias nz="$EDITOR ~/.zshrc"
-alias nf="$EDITOR ~/.config/fish/config.fish"
+alias cf="$EDITOR ~/.config/fish/config.fish"
 alias nneofetch="$EDITOR ~/.config/neofetch/config.conf"
 alias nplymouth="sudo $EDITOR /etc/plymouth/plymouthd.conf"
 
@@ -320,29 +329,28 @@ alias xdw="ls /usr/share/wayland-sessions"
 
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
-ex ()
-{
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1   ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *.deb)       ar x $1      ;;
-      *.tar.xz)    tar xf $1    ;;
-      *.tar.zst)   tar xf $1    ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
+ex() {
+	if [ -f $1 ]; then
+		case $1 in
+		*.tar.bz2) tar xjf $1 ;;
+		*.tar.gz) tar xzf $1 ;;
+		*.bz2) bunzip2 $1 ;;
+		*.rar) unrar x $1 ;;
+		*.gz) gunzip $1 ;;
+		*.tar) tar xf $1 ;;
+		*.tbz2) tar xjf $1 ;;
+		*.tgz) tar xzf $1 ;;
+		*.zip) unzip $1 ;;
+		*.Z) uncompress $1 ;;
+		*.7z) 7z x $1 ;;
+		*.deb) ar x $1 ;;
+		*.tar.xz) tar xf $1 ;;
+		*.tar.zst) tar xf $1 ;;
+		*) echo "'$1' cannot be extracted via ex()" ;;
+		esac
+	else
+		echo "'$1' is not a valid file"
+	fi
 }
 
 #wayland aliases
@@ -396,7 +404,7 @@ alias personal='cp -Rf /personal/* ~'
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
 # reporting tools - install when not installed
-neofetch
+#neofetch
 #screenfetch
 #alsi
 #paleofetch
@@ -410,3 +418,4 @@ neofetch
 #sysinfo-retro
 #cpufetch
 #colorscript random
+export PATH=$PATH:/home/gazzu/.spicetify
