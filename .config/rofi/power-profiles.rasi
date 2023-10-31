@@ -1,5 +1,5 @@
 configuration {
-    font:             "Noto Sans Regular 10";
+    font:             "NintendoDSBIOS 20";
     show-icons:       false;
     icon-theme:       "Qogir";
     scroll-method:    0;
@@ -15,11 +15,12 @@ configuration {
 window {
     background-color: @background;
     border:           0;
-    padding:          10;
+    padding:          10px 10px;
     transparency:     "real";
-    width:            170px;
-    location:         east;
-    /*y-offset:       18;*/
+    width:            355px;
+    height:           260px;
+    location:         center;
+    /*y-offset:       20;*/
     /*x-offset:       850;*/
 }
 listview {
@@ -27,8 +28,10 @@ listview {
     columns: 1;
 }
 element {
-    border:  0;
-    padding: 1px;
+    text-align: center;
+    border:  3;
+    border-radius:  70px;
+    padding: 5px;
 }
 element-text {
     background-color: inherit;
@@ -92,7 +95,7 @@ button.selected {
 inputbar {
     spacing:    0;
     text-color: @normal-foreground;
-    padding:    1px;
+    padding:    5px;
 }
 case-indicator {
     spacing:    0;
@@ -101,10 +104,12 @@ case-indicator {
 entry {
     spacing:    0;
     text-color: @normal-foreground;
+    text-align: center;
 }
 prompt {
     spacing:    0;
     text-color: @normal-foreground;
+    text-align: center;
 }
 inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
@@ -112,6 +117,8 @@ inputbar {
 textbox-prompt-colon {
     expand:     false;
     str:        "Set Power Profile:";
-    margin:     0px 0.3em 0em 0em;
+    padding: 5px 10px;
+    margin:     1px 0em 0em 0em;
     text-color: @normal-foreground;
+    text-alignment: center;
 }
