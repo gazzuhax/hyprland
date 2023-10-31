@@ -19,7 +19,7 @@ configuration {
 @import "colors.rasi"
 
 * {
-    font:                        "JetBrains Mono Nerd Font 10";
+    font:                        "NintendoDSBIOS 15";
 }
 
 /*****----- Main Window -----*****/
