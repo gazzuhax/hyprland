@@ -10,7 +10,7 @@
 * {
   background-color:       @background;
   text-color:             @foreground;
-	font:				 	          "JetBrains Mono Medium 10";
+	font:				 	          "NintendoDSBIOS 15";
 }
 
 window {
