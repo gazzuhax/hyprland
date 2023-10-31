@@ -1,8 +1,8 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: JetBrainsMono Nerd Font;
-  font-size: 14px;
-  font-weight: 900;
+  font-family: NintendoDSBIOS;
+  font-size: 23px;
+  font-weight: 600;
   padding: 1px 4px;
   border: 0;
   border-radius: 0;
@@ -27,9 +27,23 @@ window#waybar.hidden {
   opacity: 0.1;
 }
 
+#workspaces {
+  background-color: #0A1034;
+  border-radius:15px;
+  margin: 0px 2px;
+  border-bottom: 4px;
+  border-bottom-color: #00ffff;
+  border-left: 5px;
+  border-left-color: #00ffff;
+  border-style: solid;
+}
+
 #workspaces button {
-  padding: 4px 10px;
-  color: #caecf9;
+  padding-right: 15px;
+  padding-left: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #00ffff;
   background-color: transparent;
   /* Use box-shadow instead of border so the text isn't offset */
   box-shadow: inset 0 0px transparent;
@@ -46,7 +60,7 @@ window#waybar.hidden {
   background-color: transparent;
 }
 #workspaces button.active {
-  color: #00ffff;
+  color: #ff0000;
 }
 
 #workspaces button.urgent {
@@ -66,7 +80,6 @@ window#waybar.hidden {
 #cpu,
 #temperature,
 #memory,
-#workspaces,
 #clock,
 #window,
 #pulseaudio,
@@ -74,7 +87,7 @@ window#waybar.hidden {
 #custom-arch,
 #custom-bluetooth,
 #network {
-  padding: 10px 8px;
+  padding: 10px 7px;
   background-color: #0A1034;
   /*background: rgba(0, 0, 0, 0);*/
   border-radius:15px;
@@ -107,8 +120,9 @@ window#waybar.hidden {
 
 #custom-arch {
   color: #00ffff;
-  padding-left: 8px;
-  padding-right: 11px;
+  padding-left: 9px;
+  padding-right: 8px;
+  font-weight: 100;
 }
 
 #backlight {
@@ -125,8 +139,10 @@ window#waybar.hidden {
 
 #custom-powermenu {
   color: #ff0015;
-  padding-right: 13px;
+  padding-right: 22px;
   padding-left: 15px;
+  border-left-color: red;
+  border-bottom-color: red;
 }
 
 #scratchpad {
@@ -167,7 +183,7 @@ window#waybar.hidden {
 #network {
   color: #00ffff;
   padding-left: 15px;
-  padding-right: 9px;
+  padding-right: 12px;
 }
 
 #clock {
