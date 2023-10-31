@@ -6,7 +6,7 @@
  */
 
 configuration {
-    font:                           "jetbrains mono medium 10";
+    font:                           "NintendoDSBIOS 15";
     show-icons:                     false;
     display-drun: 					"";
     drun-display-format:            "{icon} {name}";
