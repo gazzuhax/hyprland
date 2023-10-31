@@ -6,7 +6,7 @@
  */
 
 configuration {
-  font:                           "JetBrains Mono Medium 12";
+  font:                           "NintendoDSBIOS 15";
   disable-history:                false;
   click-to-exit: 					        true;
 }
