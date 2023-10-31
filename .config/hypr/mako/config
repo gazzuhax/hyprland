@@ -36,7 +36,7 @@ progress-color=over #89b4fa
 
 [urgency=low]
 background-color=#0A1034
-border-color=#ff0000
+border-color=#00ffff
 default-timeout=2000
 
 [urgency=normal]
