@@ -1,0 +1,5 @@
+#!/bin/bash
+
+notify-send "Shutting down in a few seconds..."
+sleep 8
+~/.config/hypr/scripts/shutdown now
