@@ -2,7 +2,7 @@
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: NintendoDSBIOS;
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 1px 4px;
   border: 0;
   border-radius: 0;
@@ -28,7 +28,7 @@ window#waybar.hidden {
 }
 
 #workspaces {
-  background-color: #0A1034;
+  background-color: #2F465C;
   border-radius:15px;
   margin: 0px 2px;
   border-bottom: 4px;
@@ -81,6 +81,7 @@ window#waybar.hidden {
 #temperature,
 #memory,
 #clock,
+#custom-weather,
 #window,
 #pulseaudio,
 #custom-updater,
@@ -88,7 +89,7 @@ window#waybar.hidden {
 #custom-bluetooth,
 #network {
   padding: 10px 7px;
-  background-color: #0A1034;
+  background-color: #2F465C;
   /*background: rgba(0, 0, 0, 0);*/
   border-radius:15px;
   margin: 0px 3px;
@@ -118,10 +119,14 @@ window#waybar.hidden {
   padding-left: 10px;
 }
 
+#custom-weather {
+  color: #00ffff;
+}
+
 #custom-arch {
   color: #00ffff;
-  padding-left: 9px;
-  padding-right: 8px;
+  padding-left: 6px;
+  padding-right: 11px;
   font-weight: 100;
 }
 
@@ -183,7 +188,7 @@ window#waybar.hidden {
 #network {
   color: #00ffff;
   padding-left: 15px;
-  padding-right: 12px;
+  padding-right: 14px;
 }
 
 #clock {
@@ -192,4 +197,3 @@ window#waybar.hidden {
   /* opacity: 0.7; */
   /* font-size: 18px; */
 }
-
