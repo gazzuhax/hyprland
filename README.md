@@ -1,5 +1,7 @@
 Screenshots
 
+![image](https://github.com/gazzuhax/hyprland/assets/138269636/e72d1fa4-2c55-4017-b243-a63e70f56b32)
+
 ![image](https://github.com/gazzuhax/hyprland/assets/138269636/3ce594c5-3157-4b8e-b2b7-d1e519d68b6e)
 
 ![image](https://github.com/gazzuhax/hyprland/assets/138269636/41a2839e-28a6-4b47-8083-3e8c8dba7ac9)
