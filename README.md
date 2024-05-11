@@ -1,3 +1,6 @@
+Website Repository
+https://github.com/gazzuhax/CyberTux/tree/main
+
 Screenshots
 
 ![image](https://github.com/gazzuhax/hyprland/assets/138269636/e72d1fa4-2c55-4017-b243-a63e70f56b32)
